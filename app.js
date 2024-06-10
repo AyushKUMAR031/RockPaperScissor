@@ -4,7 +4,7 @@ const drawScore = document.getElementById('draw');
 const resultDisplay = document.getElementById('result');
 
 // Audio elements
-const winSound = new Audio('./audio/win.mp3');
+const winSound = new Audio('./audio/Win.mp3');
 const loseSound = new Audio('./audio/lose.mp3');
 const drawSound = new Audio('./audio/draw.mp3');
 const resetSound = new Audio('./audio/reset.mp3');
@@ -51,29 +51,29 @@ function updateScores(result) {
 }
 
 function displayResult(result, playerChoice, computerChoice) {
-  let playerMove, computerMove;
-  
-  console.log(playerChoice);
-  console.log(computerChoice);
+    let playerMove, computerMove;
 
-  if (playerChoice === "rock") {
-      playerMove = "✊";
-  } else if (playerChoice === "paper") {
-      playerMove = "🤚";
-  } else {
-      playerMove = "✌";
-  }
-  
-  if (computerChoice === "rock") {
-      computerMove = "✊";
-  } else if (computerChoice === "paper") {
-      computerMove = "🤚";
-  } else {
-      computerMove = "✌";
-  }
-  
-  const displayMove = `${playerMove} vs ${computerMove}`;
-  
+    console.log(playerChoice);
+    console.log(computerChoice);
+
+    if (playerChoice === "rock") {
+        playerMove = "✊";
+    } else if (playerChoice === "paper") {
+        playerMove = "🤚";
+    } else {
+        playerMove = "✌";
+    }
+
+    if (computerChoice === "rock") {
+        computerMove = "✊";
+    } else if (computerChoice === "paper") {
+        computerMove = "🤚";
+    } else {
+        computerMove = "✌";
+    }
+
+    const displayMove = `${playerMove} vs ${computerMove}`;
+
 
     if (result === 'win') {
         resultDisplay.textContent = `You Win! ${playerChoice} beats ${computerChoice} ${displayMove}`;
@@ -105,16 +105,16 @@ function displayResult(result, playerChoice, computerChoice) {
 
 
 function resetGame() {
-  resetSound.currentTime = 0;
-  resetSound.play();
-  setTimeout(() => {
-    resetSound.pause();
-  }, 800);
-  // Reset player, computer, and draw scores to 0
-  document.getElementById("player").textContent = "0";
-  document.getElementById("computer").textContent = "0";
-  document.getElementById("draw").textContent = "0";
+    resetSound.currentTime = 0;
+    resetSound.play();
+    setTimeout(() => {
+        resetSound.pause();
+    }, 800);
+    // Reset player, computer, and draw scores to 0
+    document.getElementById("player").textContent = "0";
+    document.getElementById("computer").textContent = "0";
+    document.getElementById("draw").textContent = "0";
 
-  // Reset result message
-  document.getElementById("result").textContent = "Choose an option";
+    // Reset result message
+    document.getElementById("result").textContent = "Choose an option";
 }
