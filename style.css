@@ -2,12 +2,6 @@ body {
     background-color: #e2f4c7;
 }
 
-.score-board {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 
 .choice-img {
     background-color: rgb(180, 223, 132);
@@ -27,9 +21,12 @@ body {
 
 .result {
     margin-top: 20px;
-    background-color: #e9ecef;
+    background-color: #d3dae0;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
+ 
+    box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2{
@@ -52,4 +49,10 @@ p{
 .btn-large:active {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.95); 
+}
+
+#result{
+    font-size: 1.9rem;
+    font-family: cursive;
+    text-align: center;
 }
