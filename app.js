@@ -84,32 +84,12 @@ function displayResult(result, playerChoice, computerChoice) {
     }
 }
 
-// function displayResult(result, playerChoice, computerChoice) {
-//   const resultDisplay = document.getElementById("result");
-
-//   let icon, message;
-//   if (result === 'win') {
-//       icon = "<i class='fas fa-thumbs-up'></i>";
-//       message = `You Win! ${playerChoice} beats ${computerChoice}`;
-//   } else if (result === 'lose') {
-//       icon = "<i class='fas fa-thumbs-down'></i>";
-//       message = `You Lose! ${computerChoice} beats ${playerChoice}`;
-//   } else {
-//       icon = "<i class='fas fa-handshake'></i>";
-//       message = `It's a Draw! You both chose ${playerChoice}`;
-//   }
-
-//   // Update the result element with both the icon and the text
-//   resultDisplay.innerHTML = `${icon} ${message}`;
-// }
-
-
 function resetGame() {
     resetSound.currentTime = 0;
     resetSound.play();
     setTimeout(() => {
         resetSound.pause();
-    }, 800);
+    }, 1000);
     // Reset player, computer, and draw scores to 0
     document.getElementById("player").textContent = "0";
     document.getElementById("computer").textContent = "0";

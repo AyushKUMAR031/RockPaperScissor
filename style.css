@@ -25,34 +25,34 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
- 
+
     box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2{
+h2 {
     text-align: center;
-    font-family:fantasy;
+    font-family: fantasy, sans-serif;
 }
 
-p{
+p {
     font-size: 1.2rem;
-    font-family: cursive;
+    font-family: cursive, sans-serif;
     text-align: center;
 }
 
 .btn-large {
     font-size: 2.5rem;
-    padding: 0.75rem 1.5rem; 
+    padding: 0.75rem 1.5rem;
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .btn-large:active {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
-#result{
+#result {
     font-size: 1.9rem;
-    font-family: cursive;
+    font-family: cursive, sans-serif;
     text-align: center;
 }
